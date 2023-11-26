@@ -340,7 +340,7 @@
 						"GroupId"
 					]
 				},
-				"CidrIp": "::/0",
+				"CidrIpv6": "::/0",
 				"FromPort": 80,
 				"IpProtocol": "tcp",
 				"ToPort": 80
@@ -370,7 +370,7 @@
 						"GroupId"
 					]
 				},
-				"CidrIp": "::/0",
+				"CidrIpv6": "::/0",
 				"FromPort": 49152,
 				"IpProtocol": "tcp",
 				"ToPort": 65535
@@ -400,7 +400,7 @@
 						"GroupId"
 					]
 				},
-				"CidrIp": "::/0",
+				"CidrIpv6": "::/0",
 				"FromPort": 33478,
 				"IpProtocol": "tcp",
 				"ToPort": 33478
@@ -430,7 +430,7 @@
 						"GroupId"
 					]
 				},
-				"CidrIp": "::/0",
+				"CidrIpv6": "::/0",
 				"FromPort": 443,
 				"IpProtocol": "tcp",
 				"ToPort": 443
