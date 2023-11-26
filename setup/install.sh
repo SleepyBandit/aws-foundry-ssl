@@ -29,8 +29,8 @@ echo "===== 4. INSTALLING AWS SERVICES AND LINUX KERNEL PATCHING ====="
 # source /aws-foundry-ssl/setup/aws_hosted_zone_id.sh
 source /aws-foundry-ssl/setup/aws_linux_updates.sh
 
-# Attempt DDNS Setup
-source /aws-foundry-ssl/setup/record_set.sh
+# Attempt DDNS Setup (BROKE)
+# source /aws-foundry-ssl/setup/record_set.sh
 
 # Set up TLS certificates with LetsEncrypt
 echo "===== 5. INSTALLING LETSENCRYPT CERTBOT ====="
