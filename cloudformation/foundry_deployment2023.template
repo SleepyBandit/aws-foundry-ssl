@@ -70,7 +70,7 @@
 			"Type": "String",
 			"Description": "Username for the Foundry IAM user.",
 			"AllowedPattern" : "[A-Za-z]+",
-			"Default": "FoundryAdmin"
+			"Default": "AdminUser"
 		},
 		"AdminUserPW": {
 			"Type": "String",
@@ -133,6 +133,7 @@
 			"Type": "String",
 			"Description": "EC2 server instance type. Factor in your use and cost - if unsure, use `t4g.small` for light performance / good cost saving. `m6`-class instances are fast but very expensive and probably not recommended unless you know you need them. See https://aws.amazon.com/ec2/pricing/on-demand/ for info.",
 			"AllowedValues": [
+				"t2.micro",
 				"t3a.small",
 				"t3a.medium",
 				"t3a.large",
@@ -153,7 +154,7 @@
 				"/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64",
 				"/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-x86_64"
 			],
-			"Default": "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64"
+			"Default": "/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-x86_64"
 		},
 		"UseFixedIP": {
 			"Type": "String",
