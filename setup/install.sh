@@ -12,8 +12,8 @@ set -x
 echo "===== 1. INSTALLING DEPENDENCIES ====="
 sudo dnf install https://rpm.nodesource.com/pub_20.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y
 sudo dnf install nodejs -y --setopt=nodesource-nodejs.module_hotfixes=1
-sudo dnf install -y openssl-devel
-sudo dnf install -y amazon-cloudwatch-agent
+# sudo dnf install -y openssl-devel
+# sudo dnf install -y amazon-cloudwatch-agent
 
 # Install foundry
 echo "===== 2. INSTALLING FOUNDRY ====="
@@ -25,8 +25,8 @@ source /aws-foundry-ssl/setup/nginx.sh
 
 # Amazon Cloudwatch logs, zone updates and kernel patching
 echo "===== 4. INSTALLING AWS SERVICES AND LINUX KERNEL PATCHING ====="
-source /aws-foundry-ssl/setup/aws_cloudwatch_config.sh
-source /aws-foundry-ssl/setup/aws_hosted_zone_id.sh
+# source /aws-foundry-ssl/setup/aws_cloudwatch_config.sh
+# source /aws-foundry-ssl/setup/aws_hosted_zone_id.sh
 source /aws-foundry-ssl/setup/aws_linux_updates.sh
 
 # Set up TLS certificates with LetsEncrypt
